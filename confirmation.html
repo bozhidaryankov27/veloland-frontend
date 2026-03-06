@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Потвърждение на поръчката</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="katalog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Велоленд Лого" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="author.html">Автор</a></li>
+      </ul>
+    </nav>
+
+    <section class="confirmation-section">
+      <div class="container">
+        <h1>Благодарим ви за поръчката!</h1>
+        <p>Вашата поръчка е успешно обработена.</p>
+        <h2>Детайли на поръчката:</h2>
+        <ul>
+          <li><strong>Име:</strong> <span id="order-name"></span></li>
+          <li><strong>Адрес:</strong> <span id="order-address"></span></li>
+          <li><strong>Контакт:</strong> <span id="order-contact"></span></li>
+          <li>
+            <strong>Метод на плащане:</strong>
+            <span id="order-payment-method"></span>
+          </li>
+          <li><strong>Обща сума:</strong> <span id="order-total"></span></li>
+        </ul>
+        <a href="index.html" class="back-home-btn">
+          <i class="fas fa-home"></i> Върни се към началната страница
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="index.html">Начало</a>
+          <a href="katalog.html">Каталог</a>
+          <a href="kontakti.html">Контакти</a>
+          <a href="avtor.html">Автор</a>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/?locale=bg_BG"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+          <p>Абонирай се за нашия бюлетин</p>
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Вашият e-mail адрес" required />
+            <button type="submit">Абониране</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="confirmation.js"></script>
+  </body>
+</html>

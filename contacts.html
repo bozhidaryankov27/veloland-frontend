@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ВелоЛенд - Контакти</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Велоленд Лого" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="author.html">Автор</a></li>
+      </ul>
+    </nav>
+    <section class="contact-section">
+      <p>Backend logic for contact form is in progress and will be implemented soon...</p>
+       <div class="contact-info">
+      <div class="container">
+        <h2>Свържете се с нас</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Име</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Въведете име"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Фамилия</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Въведете фамилия"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactInfo">Телефон или Gmail</label>
+              <input
+                type="text"
+                id="contactInfo"
+                name="contactInfo"
+                placeholder="Въведете телефон или имейл"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="message">Съобщение</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Вашето съобщение"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="submit-btn">Изпрати</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="index.html">Начало</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="author.html">Автор</a>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/?locale=bg_BG"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+     
+        <div class="newsletter">
+          <p>Абонирай се за нашия бюлетин</p>
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Вашият e-mail адрес" required />
+            <button type="submit">Абониране</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="contacts.js"></script>
+  </body>
+</html>

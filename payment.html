@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Плащане</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="catalog.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="Велоленд Лого" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="author.html">Автор</a></li>
+      </ul>
+      <div class="shopping-cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+        <div class="cart-dropdown">
+          <div class="cart-items-preview"></div>
+          <div class="cart-total-preview">
+            <p>Обща сума: <span id="cart-total-preview-price">0 €</span></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="payment-form-section">
+      <div class="container">
+        <h1>Потвърждение на поръчка</h1>
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="name">Име:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Вашето име"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Адрес:</label>
+            <textarea
+              id="address"
+              name="address"
+              placeholder="Вашият адрес"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="contact">Контакт:</label>
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="Телефон или имейл"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="payment-method">Метод на плащане:</label>
+            <select id="payment-method" name="payment-method" required>
+              <option value="cash">Наложен платеж</option>
+              <option value="card">Кредитна/Дебитна карта</option>
+            </select>
+            <div id="card-details" class="card-details hidden">
+              <label for="cardholder-name">Име на притежателя на картата</label>
+              <input
+                type="text"
+                id="cardholder-name"
+                name="cardholder-name"
+                placeholder="Име на картата"
+              />
+
+              <label for="expiry-date">Срок на валидност</label>
+              <input type="month" id="expiry-date" name="expiry-date" />
+
+              <label for="cvv">CVV</label>
+              <input
+                type="password"
+                id="cvv"
+                name="cvv"
+                placeholder="123"
+                maxlength="4"
+              />
+            </div>
+          </div>
+          <div class="form-summary">
+            <p>Обща сума: <span id="order-total">0 €</span></p>
+          </div>
+          <button type="submit" class="submit-payment">
+            Потвърди поръчката
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="index.html">Начало</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="author.html">Автор</a>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/?locale=bg_BG"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+
+        <div class="newsletter">
+          <p>Абонирай се за нашия бюлетин</p>
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Вашият e-mail адрес" required />
+            <button type="submit">Абониране</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="payment.js"></script>
+  </body>
+</html>
