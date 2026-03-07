@@ -4,9 +4,9 @@ Frontend provides unique and interactive interface which is user-friendly. It co
 
 # Technologies used
 ## Frontend development
--HTML5 - page structure and layout
--CSS3 - good styling and responsive layout
--JS - dynamic functionality and user interaction
+- HTML5 - page structure and layout
+- CSS3 - good styling and responsive layout
+- JS - dynamic functionality and user interaction
 
 # Features
 ## User interface
