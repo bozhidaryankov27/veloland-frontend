@@ -10,26 +10,26 @@ Frontend provides unique and interactive interface which is user-friendly. It co
 
 # Features
 ## User interface
-Clean and user-friendly design
-Responsive layout appropriate for different screen sizes
-Interactive styling with animations
+- Clean and user-friendly design
+- Responsive layout appropriate for different screen sizes
+- Interactive styling with animations
 
 ## Shop functionality
-Well-designed home page
-Product displayed in catalog page
-Contact form page
-Author page
+- Well-designed home page
+- Product displayed in catalog page
+- Contact form page
+- Author page
 
 ## Frontend logic
-Dynamic cart updates using JS
-Local storage used to store cart and order data
-Form handling and validation
+- Dynamic cart updates using JS
+- Local storage used to store cart and order data
+- Form handling and validation
 
 # How to Run?
 ## 1. Start the Backend
-This frontend communicates with the backend API.
-Make sure the backend server is running first.
+- This frontend communicates with the backend API.
+- Make sure the backend server is running first.
 ## 2. Run the Frontend
-Open the project folder in VS Code
-Open index.html
-Start the project using Live Server
+- Open the project folder in VS Code
+- Open index.html
+- Start the project using Live Server
